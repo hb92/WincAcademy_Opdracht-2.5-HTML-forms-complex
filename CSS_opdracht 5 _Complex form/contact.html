@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>  
+    <!-- Header input-->
+    <head> 
+        <title> My awesome first webpage </title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <!-- Start Body-->
+    <body>
+        <h1 class="auto-margin">Mijn eerste HTML pagina</h1>
+        <nav>
+            <ul class="main-navigation">
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="about.html">About me</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Netlify form-->
+        <h2>post hier je favoriete recept</h2>
+        <form name="contact" method="POST" data-netlify="true">
+            <p>
+                <label>Name: <input type="text" name="name" /></label>   
+              </p>
+              <p>
+                <label>E-mailadres: <input type="email" name="email" /></label>
+              </p>
+              <p>
+                <label>Tel: <input type="tel" name="telephone" /></label>
+              </p>
+              <p>
+                <label>Leeftijd: <input type="number" name="age" /></label>
+              </p>
+              <p>
+                <label>Geboortedatum: <input type="date" name="birthday" /></label>
+              </p>
+              <p>Jouw favoriete keuken:<br>
+                 <input type="checkbox" name="favoriete-keuken" value="frans">Frans<br>
+                <input type="checkbox" name="favoriete-keuken" value="italiaans">Italiaans<br>
+                <input type="checkbox" name="favoriete-keuken" value="spaans">Spaans<br>
+                <input type="checkbox" name="favoriete-keuken" value="arabisch">Arabisch<br>
+              </p>
+              <p>Jouw favoriete kleur:<br>
+                 <input type="color" name="favoriete-kleur" value="#ff0000"><br>
+              </p>
+              <p>
+                <label>Biografie: <textarea name="biografie"></textarea></label>
+              </p>
+              <p>Upload hier je favoriete recept:<br>
+                <input type="file" name="uploadrecept">
+              </p>
+              <p>
+                <button type="reset" name="resetform">Reset</button>
+              </p>
+              <p>
+                <button type="submit" name="submitform">Verstuur</button>
+              </p>
+        </form>
+    </body>
+</html>
